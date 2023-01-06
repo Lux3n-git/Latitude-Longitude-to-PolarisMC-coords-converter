@@ -16,7 +16,7 @@ mapcoords = transform.transform(latitude, longitude)
 #converts to xy coordinates of equidistant cylindrical projection on a graph. Think of the origin of the graph (0,0) is where the Equator and Prime Meridian intercept.
 
 x_mc_coord = round(mapcoords[0]/scaleratio,round_to_dec)
-z_mc_coord = round(mapcoords[1]/scaleratio,round_to_dec)
+z_mc_coord = (round(-1*(int(mapcoords[1]))/scaleratio,round_to_dec))
 #scales coords to the scale of the PolarisMC map compared to real life scale (1:326)
 
 print("PolarisMC Map coords: X: {}, Z: {}".format(x_mc_coord,z_mc_coord))
