@@ -19,5 +19,5 @@ x_mc_coord = round(mapcoords[0]/scaleratio,round_to_dec)
 z_mc_coord = round(mapcoords[1]/scaleratio,round_to_dec)
 #scales coords to the scale of the PolarisMC map compared to real life scale (1:326)
 
-print("PolarisMC coords: X: {x_mc_coord}, Z: {z_mc_coord}")
+print("PolarisMC Map coords: X: {}, Z: {}".format(x_mc_coord,z_mc_coord))
 
